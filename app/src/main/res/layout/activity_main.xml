@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+        <LinearLayout
+            android:layout_width="@dimen/none"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/sixteen"
+                android:text="@string/home"
+                android:textSize="@dimen/mediumText"
+                android:textColor="@color/gray"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="@dimen/sixteen"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/twentyFour"
+                android:text="@string/_0"
+                android:fontFamily="sans-serif-light"
+                android:textSize="@dimen/largeText"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchDown"
+                android:text="@string/touch_down"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoal"
+                android:text="@string/field_goal"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extraPoint"
+                android:text="@string/extra_point"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="safety"
+                android:text="@string/safety"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/onedp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/twentyFour"
+            android:background="@android:color/darker_gray"
+            />
+
+        <LinearLayout
+            android:layout_width="@dimen/none"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context="com.example.android.footballscorekeeper.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/sixteen"
+                android:text="@string/guest"
+                android:textSize="@dimen/mediumText"
+                android:textColor="@color/gray"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="@dimen/sixteen"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/twentyFour"
+                android:text="@string/_0"
+                android:textSize="@dimen/largeText"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchDownG"
+                android:text="@string/touch_down"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoalG"
+                android:text="@string/field_goal"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="extraPointG"
+                android:text="@string/extra_point"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour"
+                android:layout_marginBottom="@dimen/eight"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="safetyG"
+                android:text="@string/safety"
+                android:layout_marginLeft="@dimen/twentyFour"
+                android:layout_marginRight="@dimen/twentyFour" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/onetwenty"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:onClick="reset"
+        android:text="@string/new_game"
+        android:layout_margin="@dimen/thirtytwo" />
+
+
+</RelativeLayout>

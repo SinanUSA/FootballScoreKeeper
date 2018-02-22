@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="home">HOME</string>
+    <string name="_0">0</string>
+    <string name="touch_down">TOUCH DOWN</string>
+    <string name="field_goal">FIELD GOAL</string>
+    <string name="extra_point">EXTRA POINT</string>
+    <string name="safety">SAFETY</string>
+    <string name="guest">GUEST</string>
+    <string name="new_game">NEW GAME</string>
+</resources>
